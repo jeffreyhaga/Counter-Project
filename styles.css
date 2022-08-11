@@ -27,7 +27,7 @@ body {
     justify-content: center;
 }
 
-.btn, .btn, .btn {
+.btn {
     margin: 1rem;
     padding: 5px 10px;
     border: 2px solid black;
@@ -37,10 +37,22 @@ body {
     text-transform: uppercase;
 }
 
-.btn:hover, .btn:hover, .btn:hover {
+.btn:hover {
     background-color: black;
-    transition: 0.7s;
+    transition: 0.5s;
     color: white;
+}
+
+.btn:focus {
+    background-color: white;
+    color: black;
+    transition: none;
+}
+
+.btn:active {
+    background-color: black;
+    color: white;
+    transition: none;
 }
 
 .reset:hover {
@@ -80,10 +92,4 @@ body {
 @keyframes up {
     from { transform: translate3d(0, 0, 0);}
     to { transform: translate3d(0, -5px, 0);}
-}
-
-.btn:focus {
-    background-color: white;
-    color: black;
-    transition: none;
 }
