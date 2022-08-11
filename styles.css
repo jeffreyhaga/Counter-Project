@@ -55,6 +55,12 @@ body {
     transition: none;
 }
 
+.btn:visited {
+    background-color: white;
+    color: black;
+    transition: none;
+}
+
 .reset:hover {
     animation: shake 0.5s;
     animation-iteration-count: 1;
