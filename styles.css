@@ -81,3 +81,9 @@ body {
     from { transform: translate3d(0, 0, 0);}
     to { transform: translate3d(0, -5px, 0);}
 }
+
+.btn:focus {
+    background-color: white;
+    color: black;
+    transition: none;
+}
