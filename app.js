@@ -38,7 +38,7 @@ decrease.addEventListener('touchstart', e=> {
 });
 
 decrease.addEventListener('touchend', e=> {
-    document.getElementById('decrease').style.backgroundColor = 'white';
+    document.getElementById('decrease').style.backgroundColor = 'transparent';
     document.getElementById('decrease').style.color = 'black';
 });
 
@@ -47,8 +47,8 @@ reset.addEventListener('touchstart', e=> {
     document.getElementById('reset').style.color = 'white';
 });
 
-reset.addEventListener('reset', e=> {
-    document.getElementById('reset').style.backgroundColor = 'white';
+reset.addEventListener('touchend', e=> {
+    document.getElementById('reset').style.backgroundColor = 'transparent';
     document.getElementById('reset').style.color = 'black';
 });
 
@@ -58,6 +58,8 @@ increase.addEventListener('touchstart', e=> {
 });
 
 increase.addEventListener('touchend', e=> {
-    document.getElementById('increase').style.backgroundColor = 'white';
+    document.getElementById('increase').style.backgroundColor = 'transparent';
     document.getElementById('increase').style.color = 'black';
 });
+
+// Need to remove touchevent styling, as it's blue by default

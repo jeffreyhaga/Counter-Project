@@ -8,7 +8,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid red;
 }
 
 .container h1 {
@@ -36,6 +35,7 @@ body {
     font-size: 1rem;
     background-color: transparent;
     text-transform: uppercase;
+    color: black;
 }
 
 .btn:hover {
