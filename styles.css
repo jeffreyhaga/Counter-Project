@@ -8,6 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 1px solid red;
 }
 
 .container h1 {
@@ -52,12 +53,6 @@ body {
 .btn:active {
     background-color: black;
     color: white;
-    transition: none;
-}
-
-.btn:visited {
-    background-color: white;
-    color: black;
     transition: none;
 }
 

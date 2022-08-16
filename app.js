@@ -2,6 +2,10 @@ let count = 0;
 
 const value = document.querySelector('#value');
 const btns = document.querySelectorAll('.btn');
+const decrease = document.querySelector('#decrease');
+const reset = document.querySelector('#reset');
+const increase = document.querySelector('#increase');
+
 
 btns.forEach(function (btn) {
     btn.addEventListener('click', function(e){
@@ -26,4 +30,34 @@ btns.forEach(function (btn) {
         }
         value.textContent = count;
     })
+});
+
+decrease.addEventListener('touchstart', e=> {
+    document.getElementById('decrease').style.backgroundColor = 'black';
+    document.getElementById('decrease').style.color = 'white';
+});
+
+decrease.addEventListener('touchend', e=> {
+    document.getElementById('decrease').style.backgroundColor = 'white';
+    document.getElementById('decrease').style.color = 'black';
+});
+
+reset.addEventListener('touchstart', e=> {
+    document.getElementById('reset').style.backgroundColor = 'black';
+    document.getElementById('reset').style.color = 'white';
+});
+
+reset.addEventListener('reset', e=> {
+    document.getElementById('reset').style.backgroundColor = 'white';
+    document.getElementById('reset').style.color = 'black';
+});
+
+increase.addEventListener('touchstart', e=> {
+    document.getElementById('increase').style.backgroundColor = 'black';
+    document.getElementById('increase').style.color = 'white';
+});
+
+increase.addEventListener('touchend', e=> {
+    document.getElementById('increase').style.backgroundColor = 'white';
+    document.getElementById('increase').style.color = 'black';
 });
